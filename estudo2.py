@@ -1,0 +1,1 @@
+print("Apenas um estudo e nada mais...")
