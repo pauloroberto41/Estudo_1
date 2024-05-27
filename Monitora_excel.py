@@ -31,7 +31,7 @@ class ArquivoFechadoHandler(FileSystemEventHandler):
                 # Encontra e fecha o processo do Excel
                 for proc in psutil.process_iter():
                     if "excel.exe" in proc.name().lower():
-                        time.sleep(.1)  # Aguarda 5 segundos antes de finalizar
+                        time.sleep(.1)  # Aguarda 1 segundos antes de finalizar
                         proc.kill()
 
                 continua = False
